@@ -1,0 +1,76 @@
+{
+  "specifications": [
+    {
+      "model": "RF",
+      "features": "temporal",
+      "params": {
+        "max_depth": 12,
+        "min_samples_leaf": 5
+      },
+      "threshold_level": 0.5,
+      "epochs": 0,
+      "config_id": 1
+    },
+    {
+      "model": "RF",
+      "features": "raw",
+      "params": {
+        "max_depth": 12,
+        "min_samples_leaf": 5
+      },
+      "threshold_level": 0.4,
+      "epochs": 0,
+      "config_id": 1
+    },
+    {
+      "model": "MLP",
+      "features": "raw",
+      "params": {
+        "hidden": [
+          128,
+          64
+        ],
+        "lr": 0.001
+      },
+      "threshold_level": 0.5,
+      "epochs": 9,
+      "config_id": 2
+    },
+    {
+      "model": "IF",
+      "features": "raw",
+      "params": {
+        "max_samples": 1024
+      },
+      "threshold_level": 0.5,
+      "epochs": 0,
+      "config_id": 1
+    },
+    {
+      "model": "IF",
+      "features": "temporal",
+      "params": {
+        "max_samples": 1024
+      },
+      "threshold_level": 0.4,
+      "epochs": 0,
+      "config_id": 1
+    },
+    {
+      "model": "MLP",
+      "features": "temporal",
+      "params": {
+        "hidden": [
+          64,
+          32
+        ],
+        "lr": 0.0003
+      },
+      "threshold_level": 0.1,
+      "epochs": 1,
+      "config_id": 1
+    }
+  ],
+  "selected_model": "RF",
+  "selected_features": "temporal"
+}
